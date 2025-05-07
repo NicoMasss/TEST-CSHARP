@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oiENR3FtcPo=",
+  "dgSpecHash": "C9AMh20d7QvTYpNxliv/zlyiDJckKym1yElJecpp2QP3jCGHFwCbyHVDj7D/9lqkmbMZBVELjyE6BiFWluvYBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicolas\\source\\repos\\ProductClientHub\\ProductClientHub\\ProductClientHub.csproj",
+  "projectFilePath": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nicolas\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",

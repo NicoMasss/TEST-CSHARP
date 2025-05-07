@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "FluentValidation/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -88,10 +101,35 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "ProductClientHub.Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ProductClientHub.Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductClientHub.Communication.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "sha512": "Ckb5EDBUNJdFWyajfXzUIMRkhf52fHZOQuuZg/oiu8y7zDCVwD0iHhew6MnThjHmevanpxL3f5ci2TtHQEN6bw==",
       "type": "package",
@@ -439,10 +477,17 @@
         "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "ProductClientHub.Communication/1.0.0": {
+      "type": "project",
+      "path": "../ProductClientHub.Communication/ProductClientHub.Communication.csproj",
+      "msbuildProject": "../ProductClientHub.Communication/ProductClientHub.Communication.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "FluentValidation >= 12.0.0",
+      "ProductClientHub.Communication >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -453,11 +498,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicolas\\source\\repos\\ProductClientHub\\ProductClientHub\\ProductClientHub.csproj",
-      "projectName": "ProductClientHub",
-      "projectPath": "C:\\Users\\nicolas\\source\\repos\\ProductClientHub\\ProductClientHub\\ProductClientHub.csproj",
+      "projectUniqueName": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
+      "projectName": "ProductClientHub.API",
+      "projectPath": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
       "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicolas\\source\\repos\\ProductClientHub\\ProductClientHub\\obj\\",
+      "outputPath": "C:\\TEST-CSHARP\\ProductClientHub\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -477,7 +522,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj": {
+              "projectPath": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -489,13 +538,16 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
@@ -520,7 +572,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
