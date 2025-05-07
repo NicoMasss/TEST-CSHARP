@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\TEST-CSHARP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\responses\\responseerrormanagerjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\responses\\responseerrormanagerjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\usecases\\clients\\register\\registerclientusercase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\clients\\register\\registerclientusercase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +31,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ResponseErrorManagerJson.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
+              "RelativeDocumentMoniker": "ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
+              "RelativeToolTip": "ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:49:35.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Controller.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\Controller.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\Controllers\\Controller.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\Controller.cs",
+              "RelativeToolTip": "ProductClientHub\\Controllers\\Controller.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:40:17.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RegisterClientValidator.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientValidator.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientValidator.cs",
@@ -30,21 +63,19 @@
               "RelativeToolTip": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientValidator.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:48:44.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:48:44.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RegisterClientUserCase.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
               "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
               "RelativeToolTip": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T13:42:04.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T13:42:04.879Z"
             }
           ]
         }
