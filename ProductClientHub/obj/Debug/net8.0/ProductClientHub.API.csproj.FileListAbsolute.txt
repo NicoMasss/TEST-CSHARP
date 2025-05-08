@@ -34,3 +34,5 @@ C:\TEST-CSHARP\ProductClientHub\obj\Debug\net8.0\ProductClientHub.API.pdb
 C:\TEST-CSHARP\ProductClientHub\obj\Debug\net8.0\ProductClientHub.API.genruntimeconfig.cache
 C:\TEST-CSHARP\ProductClientHub\obj\Debug\net8.0\ref\ProductClientHub.API.dll
 C:\TEST-CSHARP\ProductClientHub\bin\Debug\net8.0\FluentValidation.dll
+C:\TEST-CSHARP\ProductClientHub\bin\Debug\net8.0\ProductClientHub.Exceptions.dll
+C:\TEST-CSHARP\ProductClientHub\bin\Debug\net8.0\ProductClientHub.Exceptions.pdb
