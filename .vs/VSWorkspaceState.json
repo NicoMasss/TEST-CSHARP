@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProductClientHub",
+    "\\ProductClientHub\\Controllers"
   ],
-  "SelectedNode": "\\ProductClientHub.sln",
+  "SelectedNode": "\\ProductClientHub\\Controllers\\ControllerClientes.cs",
   "PreviewInSolutionExplorer": false
 }
