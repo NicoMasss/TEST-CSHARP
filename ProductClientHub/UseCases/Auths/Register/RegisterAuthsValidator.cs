@@ -1,0 +1,15 @@
+﻿using FluentValidation;
+using ProductClientHub.Communication.Requests;
+
+namespace ProductClientHub.API.UseCases.Auths.Register
+{
+    public class RegisterAuthsValidator : AbstractValidator<AuthRequest>
+    {
+        public RegisterAuthsValidator()
+        {
+            RuleFor(auth => auth.User).NotEmpty().WithMessage("O usuário não pode ser vazio");
+            RuleFor(auth => auth.Password).NotEmpty().WithMessage("A senha não é válida");      
+        }
+    }
+}
+

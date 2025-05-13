@@ -1,0 +1,5 @@
+C:\TrabEngSoftware\cadad\obj\Debug\net8.0\ProductClientHub.Task.GeneratedMSBuildEditorConfig.editorconfig
+C:\TrabEngSoftware\cadad\obj\Debug\net8.0\ProductClientHub.Task.AssemblyInfoInputs.cache
+C:\TrabEngSoftware\cadad\obj\Debug\net8.0\ProductClientHub.Task.AssemblyInfo.cs
+C:\TrabEngSoftware\cadad\obj\Debug\net8.0\ProductClientHub.Task.csproj.CoreCompileInputs.cache
+C:\TrabEngSoftware\cadad\obj\Debug\net8.0\ProductClientHub.Task.sourcelink.json

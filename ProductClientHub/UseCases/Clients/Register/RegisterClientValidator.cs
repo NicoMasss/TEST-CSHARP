@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using ProductClientHub.API.Communication.Requests;
+using ProductClientHub.Communication.Requests;
 
 namespace ProductClientHub.API.UseCases.Clients.Register
 {
