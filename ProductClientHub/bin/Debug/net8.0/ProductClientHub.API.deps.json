@@ -123,6 +123,10 @@
       },
       "ProductClientHub.Communication/1.0.0": {
         "dependencies": {
+<<<<<<< Updated upstream
+=======
+          "BCrypt.Net-Next": "4.0.3",
+>>>>>>> Stashed changes
           "Dapper": "2.1.66",
           "Npgsql": "9.0.3"
         },
@@ -132,6 +136,10 @@
       },
       "ProductClientHub.Exceptions/1.0.0": {
         "dependencies": {
+<<<<<<< Updated upstream
+=======
+          "BCrypt.Net-Next": "4.0.3",
+>>>>>>> Stashed changes
           "Dapper": "2.1.66",
           "Npgsql": "9.0.3"
         },

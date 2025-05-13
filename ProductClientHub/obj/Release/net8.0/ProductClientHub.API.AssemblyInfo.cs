@@ -15,9 +15,13 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+706e7a775ca83a4933c20dbc2982866bf5b53d81")]
 =======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+800444334f1438e74a4b9c812f8c24bb726d27ed")]
+>>>>>>> Stashed changes
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+706e7a775ca83a4933c20dbc2982866bf5b53d81")]
 >>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("ProductClientHub.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductClientHub.API")]

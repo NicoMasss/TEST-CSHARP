@@ -4,6 +4,7 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\trabengsoftware\\productclienthub\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,6 +23,86 @@
     {
       "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\trabengsoftware\\productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\infraestructure\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\infraestructure\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\infraestructure\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\infraestructure\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\infraestructure\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\infraestructure\\taskrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\requests\\taskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\requests\\taskrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\requests\\authrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\requests\\authrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\requests\\requestclientjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\requests\\requestclientjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\controllers\\controllerclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\controllers\\controllerclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\usecases\\clients\\register\\registerclientusercase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\clients\\register\\registerclientusercase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\productclienthub.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\productclienthub.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\usecases\\auths\\authsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\auths\\authsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\usecases\\auths\\authsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\auths\\authsusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\usecases\\tasks\\tasksvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\tasks\\tasksvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\usecases\\tasks\\tasksusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\tasks\\tasksusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\usecases\\clients\\register\\registerclientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\clients\\register\\registerclientvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\responses\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\responses\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\responses\\taskresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\responses\\taskresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{79BA242A-F679-4FB9-BAD0-66D31B580CD6}|ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj|c:\\trabengsoftware\\productclienthub.exception\\exceptionsbase\\productclienthubexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -32,11 +113,15 @@
       "RelativeMoniker": "D:0:0:{79BA242A-F679-4FB9-BAD0-66D31B580CD6}|ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj|solutionrelative:productclienthub.exception\\exceptionsbase\\erroronvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\trabengsoftware\\productclienthub\\usecases\\clients\\register\\registerclientusercase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\usecases\\clients\\register\\registerclientusercase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\trabengsoftware\\productclienthub.communication\\responses\\responseerrormanagerjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\responses\\responseerrormanagerjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\responses\\responseerrormanagerjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -108,6 +193,7 @@
         {
           "DockedWidth": 200,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -135,11 +221,223 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T20:24:15.729Z",
+=======
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskRepository.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Infraestructure\\TaskRepository.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\Infraestructure\\TaskRepository.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Infraestructure\\TaskRepository.cs",
+              "RelativeToolTip": "ProductClientHub\\Infraestructure\\TaskRepository.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:20:49.235Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 10,
+              "Title": "ProductClientHub.API",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
+              "RelativeDocumentMoniker": "ProductClientHub\\ProductClientHub.API.csproj",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
+              "RelativeToolTip": "ProductClientHub\\ProductClientHub.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-13T22:03:08.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ProductClientHub\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:01:27.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthsValidator.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Auths\\AuthsValidator.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Auths\\AuthsValidator.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Auths\\AuthsValidator.cs",
+              "RelativeToolTip": "ProductClientHub\\UseCases\\Auths\\AuthsValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:00:27.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthsUseCase.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Auths\\AuthsUseCase.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Auths\\AuthsUseCase.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Auths\\AuthsUseCase.cs",
+              "RelativeToolTip": "ProductClientHub\\UseCases\\Auths\\AuthsUseCase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T22:00:20.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TasksValidator.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Tasks\\TasksValidator.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Tasks\\TasksValidator.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Tasks\\TasksValidator.cs",
+              "RelativeToolTip": "ProductClientHub\\UseCases\\Tasks\\TasksValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:59:56.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TasksUseCase.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Tasks\\TasksUseCase.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Tasks\\TasksUseCase.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Tasks\\TasksUseCase.cs",
+              "RelativeToolTip": "ProductClientHub\\UseCases\\Tasks\\TasksUseCase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:59:39.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Infraestructure\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\Infraestructure\\ClientRepository.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Infraestructure\\ClientRepository.cs",
+              "RelativeToolTip": "ProductClientHub\\Infraestructure\\ClientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:49:48.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RegisterClientValidator.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientValidator.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientValidator.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientValidator.cs",
+              "RelativeToolTip": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:45:42.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "ProductClientHub.Communication\\Responses\\AuthResponse.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\AuthResponse.cs",
+              "RelativeToolTip": "ProductClientHub.Communication\\Responses\\AuthResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:39:46.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TaskResponse.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\TaskResponse.cs",
+              "RelativeDocumentMoniker": "ProductClientHub.Communication\\Responses\\TaskResponse.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\TaskResponse.cs",
+              "RelativeToolTip": "ProductClientHub.Communication\\Responses\\TaskResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:39:32.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "ProductClientHub\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:38:00.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthRequest.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Requests\\AuthRequest.cs",
+              "RelativeDocumentMoniker": "ProductClientHub.Communication\\Requests\\AuthRequest.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Requests\\AuthRequest.cs",
+              "RelativeToolTip": "ProductClientHub.Communication\\Requests\\AuthRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:36:38.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RequestClientJson.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Requests\\RequestClientJson.cs",
+              "RelativeDocumentMoniker": "ProductClientHub.Communication\\Requests\\RequestClientJson.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Requests\\RequestClientJson.cs",
+              "RelativeToolTip": "ProductClientHub.Communication\\Requests\\RequestClientJson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:31:50.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Infraestructure\\DBConnection.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\Infraestructure\\DBConnection.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Infraestructure\\DBConnection.cs",
+              "RelativeToolTip": "ProductClientHub\\Infraestructure\\DBConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:31:35.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskRequest.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Requests\\TaskRequest.cs",
+              "RelativeDocumentMoniker": "ProductClientHub.Communication\\Requests\\TaskRequest.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Requests\\TaskRequest.cs",
+              "RelativeToolTip": "ProductClientHub.Communication\\Requests\\TaskRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T21:30:45.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+>>>>>>> Stashed changes
               "Title": "ResponseClientJson.cs",
               "DocumentMoniker": "C:\\TrabEngSoftware\\ProductClientHub.Communication\\Responses\\ResponseClientJson.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Communication\\Responses\\ResponseClientJson.cs",
@@ -308,7 +606,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 17,
+>>>>>>> Stashed changes
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\TrabEngSoftware\\ProductClientHub\\Program.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\Program.cs",
@@ -316,11 +618,16 @@
               "RelativeToolTip": "ProductClientHub\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T21:33:00.263Z"
+              "WhenOpened": "2025-05-08T21:33:00.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 11,
+>>>>>>> Stashed changes
               "Title": "ExceptionFilter.cs",
               "DocumentMoniker": "C:\\TrabEngSoftware\\ProductClientHub\\Filters\\ExceptionFilter.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\Filters\\ExceptionFilter.cs",
@@ -328,11 +635,16 @@
               "RelativeToolTip": "ProductClientHub\\Filters\\ExceptionFilter.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T21:28:45.631Z"
+              "WhenOpened": "2025-05-08T21:28:45.631Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 22,
+>>>>>>> Stashed changes
               "Title": "ResponseErrorManagerJson.cs",
               "DocumentMoniker": "C:\\TrabEngSoftware\\ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
@@ -350,13 +662,18 @@
               "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
               "ToolTip": "C:\\TrabEngSoftware\\ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
               "RelativeToolTip": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:36:38.433Z"
+              "WhenOpened": "2025-05-08T03:36:38.433Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 21,
+>>>>>>> Stashed changes
               "Title": "ErrorOnValidationException.cs",
               "DocumentMoniker": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ExceptionsBase\\ErrorOnValidationException.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Exception\\ExceptionsBase\\ErrorOnValidationException.cs",
@@ -368,7 +685,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 20,
+>>>>>>> Stashed changes
               "Title": "ProductClientHubException.cs",
               "DocumentMoniker": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ExceptionsBase\\ProductClientHubException.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Exception\\ExceptionsBase\\ProductClientHubException.cs",
@@ -380,12 +701,17 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 6,
+>>>>>>> Stashed changes
               "Title": "ControllerClientes.cs",
               "DocumentMoniker": "C:\\TrabEngSoftware\\ProductClientHub\\Controllers\\ControllerClientes.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\Controllers\\ControllerClientes.cs",
               "ToolTip": "C:\\TrabEngSoftware\\ProductClientHub\\Controllers\\ControllerClientes.cs",
               "RelativeToolTip": "ProductClientHub\\Controllers\\ControllerClientes.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAAAAAA",
 =======
               "DocumentIndex": 0,
@@ -395,6 +721,9 @@
               "ToolTip": "C:\\TrabEngSoftware\\ProductClientHub\\Controllers\\ControllerClients.cs",
               "RelativeToolTip": "ProductClientHub\\Controllers\\ControllerClients.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+>>>>>>> Stashed changes
+=======
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wDEAAAAlAAAA",
 >>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T17:59:45.457Z",

@@ -1,6 +1,10 @@
 C:\TEST-CSHARP\ProductClientHub.Communication\bin\Debug\net8.0\ProductClientHub.Communication.deps.json
 C:\TEST-CSHARP\ProductClientHub.Communication\bin\Debug\net8.0\ProductClientHub.Communication.dll
 C:\TEST-CSHARP\ProductClientHub.Communication\bin\Debug\net8.0\ProductClientHub.Communication.pdb
+<<<<<<< Updated upstream
+=======
+C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.Communication.csproj.AssemblyReference.cache
+>>>>>>> Stashed changes
 C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.Communication.GeneratedMSBuildEditorConfig.editorconfig
 C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.Communication.AssemblyInfoInputs.cache
 C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.Communication.AssemblyInfo.cs
@@ -10,6 +14,7 @@ C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.
 C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\refint\ProductClientHub.Communication.dll
 C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.Communication.pdb
 C:\TEST-CSHARP\ProductClientHub.Communication\obj\Debug\net8.0\ref\ProductClientHub.Communication.dll
+<<<<<<< Updated upstream
 C:\TrabEngSoftware\ProductClientHub.Communication\bin\Debug\net8.0\ProductClientHub.Communication.deps.json
 C:\TrabEngSoftware\ProductClientHub.Communication\bin\Debug\net8.0\ProductClientHub.Communication.dll
 C:\TrabEngSoftware\ProductClientHub.Communication\bin\Debug\net8.0\ProductClientHub.Communication.pdb
@@ -23,3 +28,5 @@ C:\TrabEngSoftware\ProductClientHub.Communication\obj\Debug\net8.0\refint\Produc
 C:\TrabEngSoftware\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.Communication.pdb
 C:\TrabEngSoftware\ProductClientHub.Communication\obj\Debug\net8.0\ref\ProductClientHub.Communication.dll
 C:\TrabEngSoftware\ProductClientHub.Communication\obj\Debug\net8.0\ProductClientHub.Communication.csproj.AssemblyReference.cache
+=======
+>>>>>>> Stashed changes

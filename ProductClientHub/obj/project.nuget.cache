@@ -1,12 +1,18 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "dgSpecHash": "WKzacCWEqs2cX3RlELo5Z4Dll9v34u5OxgONf3sK+/Tg2b+d+YYnxd7WtkUepH9NVMzRRkauBcrNp0zri5KuiQ==",
 =======
   "dgSpecHash": "PWMjqbYPXAYfU/c/u1BBg4PIjOTYQKbfbHzQRVP20eC/SYgDRQSUoTfcalbYN1c+su5A4roqZAUKNcL7cxPnMw==",
 >>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "C:\\TrabEngSoftware\\ProductClientHub\\ProductClientHub.API.csproj",
+=======
+  "dgSpecHash": "ORGgjtpF/9SioBhHf8FEmR5WBRvKCw+cFDvNexSSxupWk+qQ0oJpC108NAZFV9fuBPtKeqJj8m36rr1zdhVPxg==",
+  "success": true,
+  "projectFilePath": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\nicolas\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",

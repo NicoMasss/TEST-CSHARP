@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 ﻿using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.AspNetCore.Mvc;
+=======
+﻿using Microsoft.AspNetCore.Mvc;
+>>>>>>> Stashed changes
 using ProductClientHub.API.Infraestructure;
 using ProductClientHub.API.UseCases.Clients.Register;
 using ProductClientHub.Communication.Requests;
@@ -17,12 +21,16 @@ namespace ProductClientHub.API.Controllers
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
         public IActionResult Register([FromBody] RequestClientJson request)
         {
-                var useCase = new RegisterClientUserCase();
+            var useCase = new RegisterClientUserCase();
 
+<<<<<<< Updated upstream
                 var response = useCase.Execute(request);                
+=======
+            var response = useCase.Execute(request);
+>>>>>>> Stashed changes
 
-                return Created(string.Empty, response);
-        }
+            return Created(string.Empty, response);
+        } 
 
         [HttpPut]
         public IActionResult Update()
@@ -35,9 +43,14 @@ namespace ProductClientHub.API.Controllers
         {
             var repository = new ClientRepository();
 
+<<<<<<< Updated upstream
             var users = repository.Get();
 
             return Ok(users);
+=======
+            var clients = repository.Get();
+            return Ok(clients);
+>>>>>>> Stashed changes
         }
 
         [HttpGet]

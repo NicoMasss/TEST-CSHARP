@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\TrabEngSoftware\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\TrabEngSoftware\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj",
         "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
         "outputPath": "C:\\TrabEngSoftware\\ProductClientHub.Communication\\obj\\",
+=======
+    "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj": {}
+  },
+  "projects": {
+    "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj",
+        "projectName": "ProductClientHub.Communication",
+        "projectPath": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj",
+        "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
+        "outputPath": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +63,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+<<<<<<< Updated upstream
+=======
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+>>>>>>> Stashed changes
             "Dapper": {
               "target": "Package",
               "version": "[2.1.66, )"
