@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\TEST-CSHARP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\controllers\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\controllers\\controllerclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\controllers\\controllerclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79BA242A-F679-4FB9-BAD0-66D31B580CD6}|ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj|c:\\test-csharp\\productclienthub.exception\\exceptionsbase\\productclienthubexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\responses\\responseerrormanagerjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\filters\\exceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|c:\\test-csharp\\productclienthub.communication\\responses\\responseclientjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5DDD2DE-C82C-488A-8DDA-BCDE38AA5E74}|ProductClientHub.Communication\\ProductClientHub.Communication.csproj|solutionrelative:productclienthub.communication\\responses\\responseclientjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|c:\\test-csharp\\productclienthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23894C27-E15A-4415-A16E-900C7702E175}|ProductClientHub\\ProductClientHub.API.csproj|solutionrelative:productclienthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ResponseClientJson.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\ResponseClientJson.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Communication\\Responses\\ResponseClientJson.cs",
@@ -54,25 +54,23 @@
               "RelativeToolTip": "ProductClientHub.Communication\\Responses\\ResponseClientJson.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T21:39:07.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T21:39:07.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Program.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\Program.cs",
               "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Program.cs",
               "RelativeToolTip": "ProductClientHub\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T21:33:00.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T21:33:00.263Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "ExceptionFilter.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Filters\\ExceptionFilter.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\Filters\\ExceptionFilter.cs",
@@ -80,12 +78,11 @@
               "RelativeToolTip": "ProductClientHub\\Filters\\ExceptionFilter.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T21:28:45.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T21:28:45.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ResponseErrorManagerJson.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
@@ -93,12 +90,11 @@
               "RelativeToolTip": "ProductClientHub.Communication\\Responses\\ResponseErrorManagerJson.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:43:25.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T03:43:25.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "RegisterClientUserCase.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
               "RelativeDocumentMoniker": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
@@ -106,12 +102,11 @@
               "RelativeToolTip": "ProductClientHub\\UseCases\\Clients\\Register\\RegisterClientUserCase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:36:38.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T03:36:38.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ErrorOnValidationException.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ExceptionsBase\\ErrorOnValidationException.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Exception\\ExceptionsBase\\ErrorOnValidationException.cs",
@@ -119,12 +114,11 @@
               "RelativeToolTip": "ProductClientHub.Exception\\ExceptionsBase\\ErrorOnValidationException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:32:52.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T03:32:52.701Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ProductClientHubException.cs",
               "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ExceptionsBase\\ProductClientHubException.cs",
               "RelativeDocumentMoniker": "ProductClientHub.Exception\\ExceptionsBase\\ProductClientHubException.cs",
@@ -132,18 +126,17 @@
               "RelativeToolTip": "ProductClientHub.Exception\\ExceptionsBase\\ProductClientHubException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:27:40.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T03:27:40.189Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Controller.cs",
-              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\Controller.cs",
-              "RelativeDocumentMoniker": "ProductClientHub\\Controllers\\Controller.cs",
-              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\Controller.cs",
-              "RelativeToolTip": "ProductClientHub\\Controllers\\Controller.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAA3AAAA",
+              "Title": "ControllerClientes.cs",
+              "DocumentMoniker": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\ControllerClientes.cs",
+              "RelativeDocumentMoniker": "ProductClientHub\\Controllers\\ControllerClientes.cs",
+              "ToolTip": "C:\\TEST-CSHARP\\ProductClientHub\\Controllers\\ControllerClientes.cs",
+              "RelativeToolTip": "ProductClientHub\\Controllers\\ControllerClientes.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAD4vzQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T14:40:17.112Z",
               "EditorCaption": ""

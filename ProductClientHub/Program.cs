@@ -9,9 +9,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddMvc(option => option.Filters.Add(typeof(ExceptionFilter)));
+
 var app = builder.Build();
 
-builder.Services.AddMvc(option => option.Filters.Add(typeof(ExceptionFilter)));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
