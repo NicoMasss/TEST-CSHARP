@@ -1,22 +1,10 @@
 {
   "ExpandedNodes": [
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     "",
     "\\ProductClientHub",
-    "\\ProductClientHub\\Controllers"
-  ],
-  "SelectedNode": "\\ProductClientHub\\Controllers\\ControllerClientes.cs",
-=======
-    ""
-=======
-    "",
-    "\\ProductClientHub",
-    "\\ProductClientHub\\Controllers",
+    "\\ProductClientHub.Exception",
     "\\ProductClientHub\\Infraestructure"
->>>>>>> Stashed changes
   ],
   "SelectedNode": "\\ProductClientHub.sln",
->>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }

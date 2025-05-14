@@ -1,18 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "dgSpecHash": "WKzacCWEqs2cX3RlELo5Z4Dll9v34u5OxgONf3sK+/Tg2b+d+YYnxd7WtkUepH9NVMzRRkauBcrNp0zri5KuiQ==",
-=======
-  "dgSpecHash": "PWMjqbYPXAYfU/c/u1BBg4PIjOTYQKbfbHzQRVP20eC/SYgDRQSUoTfcalbYN1c+su5A4roqZAUKNcL7cxPnMw==",
->>>>>>> Stashed changes
+  "dgSpecHash": "CC7s2bGJpPaZwNOCjopNMvyh6cmxnKhj9aTtNcMyV/pGELZXp9DWHR7YYZb1hGpVSOrxb1OMyNlrmvUjbQJ29A==",
   "success": true,
   "projectFilePath": "C:\\TrabEngSoftware\\ProductClientHub\\ProductClientHub.API.csproj",
-=======
-  "dgSpecHash": "ORGgjtpF/9SioBhHf8FEmR5WBRvKCw+cFDvNexSSxupWk+qQ0oJpC108NAZFV9fuBPtKeqJj8m36rr1zdhVPxg==",
-  "success": true,
-  "projectFilePath": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\nicolas\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
@@ -27,5 +17,12 @@
     "C:\\Users\\nicolas\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\TrabEngSoftware\\ProductClientHub\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

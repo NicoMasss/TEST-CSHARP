@@ -183,10 +183,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-<<<<<<< Updated upstream
-=======
           "BCrypt.Net-Next": "4.0.3",
->>>>>>> Stashed changes
           "Dapper": "2.1.66",
           "Npgsql": "9.0.3"
         },
@@ -201,10 +198,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-<<<<<<< Updated upstream
-=======
           "BCrypt.Net-Next": "4.0.3",
->>>>>>> Stashed changes
           "Dapper": "2.1.66",
           "Npgsql": "9.0.3"
         },
@@ -782,19 +776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
       "projectUniqueName": "C:\\TrabEngSoftware\\ProductClientHub\\ProductClientHub.API.csproj",
       "projectName": "ProductClientHub.API",
       "projectPath": "C:\\TrabEngSoftware\\ProductClientHub\\ProductClientHub.API.csproj",
       "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
       "outputPath": "C:\\TrabEngSoftware\\ProductClientHub\\obj\\",
-=======
-      "projectUniqueName": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
-      "projectName": "ProductClientHub.API",
-      "projectPath": "C:\\TEST-CSHARP\\ProductClientHub\\ProductClientHub.API.csproj",
-      "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
-      "outputPath": "C:\\TEST-CSHARP\\ProductClientHub\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -815,19 +801,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< Updated upstream
             "C:\\TrabEngSoftware\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj": {
               "projectPath": "C:\\TrabEngSoftware\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj"
             },
             "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj": {
               "projectPath": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj"
-=======
-            "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj": {
-              "projectPath": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj"
-            },
-            "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj": {
-              "projectPath": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj"
->>>>>>> Stashed changes
             }
           }
         }
@@ -890,5 +868,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\TrabEngSoftware\\ProductClientHub\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

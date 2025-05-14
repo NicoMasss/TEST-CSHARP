@@ -9,19 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProductClientHub.API
 build_property.RootNamespace = ProductClientHub.API
-<<<<<<< Updated upstream
 build_property.ProjectDir = C:\TrabEngSoftware\ProductClientHub\
-=======
-build_property.ProjectDir = C:\TEST-CSHARP\ProductClientHub\
->>>>>>> Stashed changes
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< Updated upstream
 build_property.MSBuildProjectDirectory = C:\TrabEngSoftware\ProductClientHub
-=======
-build_property.MSBuildProjectDirectory = C:\TEST-CSHARP\ProductClientHub
->>>>>>> Stashed changes
 build_property._RazorSourceGeneratorDebug = 

@@ -27,7 +27,7 @@ namespace ProductClientHub.API.Repositories
             return id;
         }
 
-        public TaskResponse? GetById(Guid id)
+        public TaskResponse GetById(Guid id)
         {
             using var conn = new DBConnection();
 

@@ -1,31 +1,21 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "dgSpecHash": "1GuXhOOzNBA6PJZTLrSYVnjH0S45xUp0lQzZWiJE8akWNCly/asEAVYoMgPbOn9Q1VjIUOaoDYO9B1MmlZK/Bg==",
+  "dgSpecHash": "DhXmtgcz4H1qAbuRuIHAEPNvulbDw06sTZoUNqdjlnepaGcW8wvrS8sKeBnzdOJo0A/OHXIYvhZo/oO6iJ+O+g==",
   "success": true,
   "projectFilePath": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
-  "expectedPackageFiles": [],
-=======
-  "dgSpecHash": "UjGsOKzPkFym3qkEKOFp7KYZDeilXXmGXlSu7W5DDIy9Q3p4Cb3CsDZY8XHJo/YMvw2Zh2TWMs57ETGyfcdSaA==",
-  "success": true,
-  "projectFilePath": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
-  "expectedPackageFiles": [
-=======
-  "dgSpecHash": "FMoba6YTgqRx97Yf9F+ajm8x9Wt/m9YJGlPMEta6sqD0TAJ7voUXZRnsisp90gsnHB9h9gvLmBKVs96fLVst/Q==",
-  "success": true,
-  "projectFilePath": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicolas\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
->>>>>>> Stashed changes
     "C:\\Users\\nicolas\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512"
   ],
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\TrabEngSoftware\\ProductClientHub.Exception\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

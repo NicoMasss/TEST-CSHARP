@@ -17,11 +17,16 @@ namespace ProductClientHub.API.Controllers
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
         public IActionResult Register([FromBody] RequestClientJson request)
         {
-                var useCase = new RegisterClientUserCase();
+            var useCase = new RegisterClientUserCase();
 
-                var response = useCase.Execute(request);                
+            var response = useCase.Execute(request);
 
-                return Created(string.Empty, response);
+            var repository = new ClientRepository();
+
+            var success = repository.Add(request);
+
+
+            return Created(string.Empty, response);
         }
 
         [HttpPut]
@@ -44,12 +49,20 @@ namespace ProductClientHub.API.Controllers
         [Route("{id}")]
         public IActionResult GetById([FromRoute] Guid id)
         {
-            return Ok();
+            var repository = new ClientRepository();
+
+            var client = repository.GetByid(id);
+
+            return Ok(client);
         }
 
         [HttpDelete]
-        public IActionResult Delete()
+        [Route("{id}")]
+        public IActionResult Delete([FromRoute] Guid id)
         {
+            var repository = new ClientRepository();
+
+            var client = repository.GetByid(id);
             return Ok();
         }
     }
