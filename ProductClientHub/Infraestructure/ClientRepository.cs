@@ -1,8 +1,5 @@
 ﻿using Dapper;
-<<<<<<< Updated upstream
-=======
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
->>>>>>> Stashed changes
 using ProductClientHub.Communication.Requests;
 using ProductClientHub.Communication.Responses;
 
@@ -16,15 +13,6 @@ namespace ProductClientHub.API.Infraestructure
 
             var passwordHash = BCrypt.Net.BCrypt.HashPassword(client.Password);
 
-<<<<<<< Updated upstream
-            string query = @"
-            INSERT INTO users (name, email, password_hash)
-            VALUES (@Name, @Email, @PasswordHash);";
-
-            var result = conn.Connection.Execute(query, new
-            {
-                client.Name,
-                client.Email,
             string query = @"INSERT INTO public.users(
 	                            name, email, password_hash)
 	                            VALUES (@Name, @Email, @passwordHash);";
@@ -39,19 +27,11 @@ namespace ProductClientHub.API.Infraestructure
             return result == 1;
         }
 
-        public List<ResponseClientJson> Get()
-        {
-            using var conn = new DBConnection();
-
-            string query = "SELECT id, name, email FROM users WHERE is_deleted = false;";
-
-            return conn.Connection.Query<ResponseClientJson>(query).ToList();
-        }
         public List<RequestClientJson> Get()
         {
             using var conn = new DBConnection();
 
-            string query = @"Select * FROM users;";
+            string query = @"Select * FROM users WHERE is_deleted = false;";
 
             var users = conn.Connection.Query<RequestClientJson>(sql: query);
 

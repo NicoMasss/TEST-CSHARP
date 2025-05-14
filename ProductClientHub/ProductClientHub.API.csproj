@@ -18,5 +18,4 @@
     <ProjectReference Include="..\ProductClientHub.Communication\ProductClientHub.Communication.csproj" />
 	<ProjectReference Include="..\ProductClientHub.Exception\ProductClientHub.Exceptions.csproj" />
   </ItemGroup>
-
 </Project>
