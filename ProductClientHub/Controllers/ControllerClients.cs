@@ -25,7 +25,8 @@ namespace ProductClientHub.API.Controllers
 
             var success = repository.Add(request);
 
-            return Created(string.Empty, success);
+
+            return Created(string.Empty, response);
         }
 
         [HttpPut]
@@ -62,8 +63,7 @@ namespace ProductClientHub.API.Controllers
             var repository = new ClientRepository();
 
             var client = repository.GetByid(id);
-
-            return Ok(client);
+            return Ok();
         }
     }
 }
