@@ -25,9 +25,16 @@ namespace ProductClientHub.API.Controllers
         }
 
         [HttpPut]
-        public IActionResult Update()
+        public IActionResult Update([FromBody] RequestClientJsonUpdate request)
         {
-            return Ok();
+            var repository = new ClientRepository();
+
+            var users = repository.Update(request);
+
+            if (!users)
+                return BadRequest("Email ou senha incorretos.");
+
+            return Ok(users);
         }
 
         [HttpGet]
@@ -44,13 +51,21 @@ namespace ProductClientHub.API.Controllers
         [Route("{id}")]
         public IActionResult GetById([FromRoute] Guid id)
         {
-            return Ok();
+            var repository = new ClientRepository();
+
+            var user = repository.GetById(id);
+
+            return Ok(user);
         }
 
-        [HttpDelete]
-        public IActionResult Delete()
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
         {
-            return Ok();
+            var repository = new ClientRepository();
+
+            var found = repository.Delete(id);
+
+            return Ok(found);
         }
     }
 }

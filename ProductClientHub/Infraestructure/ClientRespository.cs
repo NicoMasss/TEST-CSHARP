@@ -1,5 +1,7 @@
 ﻿using Dapper;
+using Microsoft.AspNetCore.Http.HttpResults;
 using ProductClientHub.Communication.Requests;
+using ProductClientHub.Communication.Responses;
 
 namespace ProductClientHub.API.Infraestructure
 {
@@ -29,11 +31,64 @@ namespace ProductClientHub.API.Infraestructure
         {
             using var conn = new DBConnection();
 
-            string query = @"Select * FROM users;";
+            string query = @"Select * FROM users WHERE is_deleted = false;";
 
             var users = conn.Connection.Query<RequestClientJson>(sql: query);
 
             return users.ToList();
+        }
+
+        public ResponseClientJson GetById(Guid id)
+        {
+            using var conn = new DBConnection();
+
+            string query = @"SELECT id, name, email 
+                                FROM users 
+                                    WHERE id = @Id AND is_deleted = false;";
+
+            var client = conn.Connection.QueryFirstOrDefault<ResponseClientJson>(query, new { Id = id });
+
+            return client;
+        }
+
+        public bool Delete(Guid id)
+        {
+            using var conn = new DBConnection();
+
+            string query = "DELETE FROM tasks WHERE id = @Id;";
+            var result = conn.Connection.Execute(query, new { Id = id });
+
+            return result == 1;
+        }
+
+        public bool Update(RequestClientJsonUpdate client) 
+        {
+            using var conn = new DBConnection();
+
+            var passwordQuery = @"SELECT password_hash FROM users 
+                                    WHERE email = @Email AND is_deleted = false;";
+
+            var storedPasswordHash = conn.Connection.QueryFirstOrDefault<string>(passwordQuery, new { Email = client.Email });
+
+            if (storedPasswordHash is null) return false;
+
+            bool passwordMatches = BCrypt.Net.BCrypt.Verify(client.Password, storedPasswordHash);
+
+            if (!passwordMatches) return false; //tem que retornar senha incorreta
+
+            var newPasswordHash = BCrypt.Net.BCrypt.HashPassword(client.NewPassword);
+
+            var updateQuery = @"UPDATE users 
+                                            SET password_hash = @NewPasswordHash
+                                                    WHERE email = @Email AND is_deleted = false;";
+
+            var result = conn.Connection.Execute(updateQuery, new
+            {
+                NewPasswordHash = newPasswordHash,
+                Email = client.Email
+            });
+
+            return result == 1;
         }
     }
 }

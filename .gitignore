@@ -1,0 +1,58 @@
+# ====== ARQUIVOS GERADOS PELO VISUAL STUDIO ======
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ====== ARQUIVOS DE BUILD (.NET) ======
+bin/
+obj/
+artifacts/
+project.lock.json
+project.fragment.lock.json
+
+# ====== PACOTES E DEPENDÊNCIAS ======
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.cache
+*.dbmdl
+*.bak
+
+# ====== LOGS, CONFIGS TEMPORÁRIOS ======
+*.log
+*.tmp
+*.pid
+*.psess
+*.vsp
+*.vspx
+
+# ====== CONFIGS DE DEBUG E RUNTIME ======
+*.pdb
+*.dll
+*.exe
+*.runtimeconfig.json
+*.deps.json
+*.csproj.FileListAbsolute.txt
+*.csproj.GenerateResource.cache
+
+# ====== SISTEMAS OPERACIONAIS ======
+.DS_Store         # macOS
+Thumbs.db         # Windows
+ehthumbs.db       # Windows
+Desktop.ini       # Windows
+
+# ====== VISUAL STUDIO CODE ======
+.vscode/
+*.code-workspace
+
+# ====== JETBRAINS RIDER / RESHARPER ======
+.idea/
+*.DotSettings.user
+
+# ====== GIT MERGE E STASH ======
+*.orig
+*.rej
+*.merge
