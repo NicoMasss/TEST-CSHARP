@@ -1,10 +1,6 @@
 C:\TEST-CSHARP\ProductClientHub.Exception\bin\Debug\net8.0\ProductClientHub.Exceptions.deps.json
 C:\TEST-CSHARP\ProductClientHub.Exception\bin\Debug\net8.0\ProductClientHub.Exceptions.dll
 C:\TEST-CSHARP\ProductClientHub.Exception\bin\Debug\net8.0\ProductClientHub.Exceptions.pdb
-<<<<<<< Updated upstream
-=======
-C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exceptions.csproj.AssemblyReference.cache
->>>>>>> Stashed changes
 C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
 C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exceptions.AssemblyInfoInputs.cache
 C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exceptions.AssemblyInfo.cs
@@ -14,7 +10,6 @@ C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exce
 C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\refint\ProductClientHub.Exceptions.dll
 C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exceptions.pdb
 C:\TEST-CSHARP\ProductClientHub.Exception\obj\Debug\net8.0\ref\ProductClientHub.Exceptions.dll
-<<<<<<< Updated upstream
 C:\TrabEngSoftware\ProductClientHub.Exception\bin\Debug\net8.0\ProductClientHub.Exceptions.deps.json
 C:\TrabEngSoftware\ProductClientHub.Exception\bin\Debug\net8.0\ProductClientHub.Exceptions.dll
 C:\TrabEngSoftware\ProductClientHub.Exception\bin\Debug\net8.0\ProductClientHub.Exceptions.pdb
@@ -28,5 +23,3 @@ C:\TrabEngSoftware\ProductClientHub.Exception\obj\Debug\net8.0\refint\ProductCli
 C:\TrabEngSoftware\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exceptions.pdb
 C:\TrabEngSoftware\ProductClientHub.Exception\obj\Debug\net8.0\ref\ProductClientHub.Exceptions.dll
 C:\TrabEngSoftware\ProductClientHub.Exception\obj\Debug\net8.0\ProductClientHub.Exceptions.csproj.AssemblyReference.cache
-=======
->>>>>>> Stashed changes

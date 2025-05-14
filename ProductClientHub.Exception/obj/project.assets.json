@@ -2,22 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-<<<<<<< Updated upstream
-=======
-      "BCrypt.Net-Next/4.0.3": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/BCrypt.Net-Next.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/BCrypt.Net-Next.dll": {
-            "related": ".xml"
-          }
-        }
-      },
->>>>>>> Stashed changes
       "Dapper/2.1.66": {
         "type": "package",
         "compile": {
@@ -85,40 +69,6 @@
     }
   },
   "libraries": {
-<<<<<<< Updated upstream
-=======
-    "BCrypt.Net-Next/4.0.3": {
-      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
-      "type": "package",
-      "path": "bcrypt.net-next/4.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "bcrypt.net-next.4.0.3.nupkg.sha512",
-        "bcrypt.net-next.nuspec",
-        "ico.png",
-        "lib/net20/BCrypt.Net-Next.dll",
-        "lib/net20/BCrypt.Net-Next.xml",
-        "lib/net35/BCrypt.Net-Next.dll",
-        "lib/net35/BCrypt.Net-Next.xml",
-        "lib/net462/BCrypt.Net-Next.dll",
-        "lib/net462/BCrypt.Net-Next.xml",
-        "lib/net472/BCrypt.Net-Next.dll",
-        "lib/net472/BCrypt.Net-Next.xml",
-        "lib/net48/BCrypt.Net-Next.dll",
-        "lib/net48/BCrypt.Net-Next.xml",
-        "lib/net5.0/BCrypt.Net-Next.dll",
-        "lib/net5.0/BCrypt.Net-Next.xml",
-        "lib/net6.0/BCrypt.Net-Next.dll",
-        "lib/net6.0/BCrypt.Net-Next.xml",
-        "lib/netstandard2.0/BCrypt.Net-Next.dll",
-        "lib/netstandard2.0/BCrypt.Net-Next.xml",
-        "lib/netstandard2.1/BCrypt.Net-Next.dll",
-        "lib/netstandard2.1/BCrypt.Net-Next.xml",
-        "readme.md"
-      ]
-    },
->>>>>>> Stashed changes
     "Dapper/2.1.66": {
       "sha512": "/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
       "type": "package",
@@ -263,10 +213,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-<<<<<<< Updated upstream
-=======
-      "BCrypt.Net-Next >= 4.0.3",
->>>>>>> Stashed changes
       "Dapper >= 2.1.66",
       "Npgsql >= 9.0.3"
     ]
@@ -278,19 +224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
       "projectUniqueName": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
       "projectName": "ProductClientHub.Exceptions",
       "projectPath": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
       "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
       "outputPath": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\obj\\",
-=======
-      "projectUniqueName": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
-      "projectName": "ProductClientHub.Exceptions",
-      "projectPath": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
-      "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
-      "outputPath": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -328,13 +266,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-<<<<<<< Updated upstream
-=======
-          "BCrypt.Net-Next": {
-            "target": "Package",
-            "version": "[4.0.3, )"
-          },
->>>>>>> Stashed changes
           "Dapper": {
             "target": "Package",
             "version": "[2.1.66, )"

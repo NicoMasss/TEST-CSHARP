@@ -1,7 +1,6 @@
 {
   "version": 2,
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
   "dgSpecHash": "jQVMjSURHFSXLdzCvVEk1VKpabKuxSF76oyR01FvaLXS6/qKWFYUBNE9ixsWaB6Zkxwja4BXbGsAdNA/1iMxHA==",
   "success": true,
   "projectFilePath": "C:\\TrabEngSoftware\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj",
@@ -11,21 +10,11 @@
   "success": true,
   "projectFilePath": "C:\\TrabEngSoftware\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj",
   "expectedPackageFiles": [
-=======
-  "dgSpecHash": "43GrBe/hT3ZQZsXV2cYZY4RZCIOmQo4bGxdm0QvW8ctDhGGsPsWMPkPQx0iUXumgDfGcnGCS7PRfMGDhb7Sx5A==",
-  "success": true,
-  "projectFilePath": "C:\\TEST-CSHARP\\ProductClientHub.Communication\\ProductClientHub.Communication.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\nicolas\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
->>>>>>> Stashed changes
     "C:\\Users\\nicolas\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\nicolas\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512"
   ],
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
 >>>>>>> Stashed changes
   "logs": []
 }
