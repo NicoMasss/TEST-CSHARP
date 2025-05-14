@@ -27,10 +27,6 @@ namespace ProductClientHub.API.Controllers
         [Route("{taskId}")]
         public IActionResult GetById([FromRoute] Guid taskId)
         {
-            //var UseCase = new RegisterTasksUserCase();
-
-            //var response = UseCase.Execute(Use);
-
             return Ok();
         }
 

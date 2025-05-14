@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
         "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
         "outputPath": "C:\\TrabEngSoftware\\ProductClientHub.Exception\\obj\\",
+=======
+    "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj": {}
+  },
+  "projects": {
+    "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
+        "projectName": "ProductClientHub.Exceptions",
+        "projectPath": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\ProductClientHub.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\nicolas\\.nuget\\packages\\",
+        "outputPath": "C:\\TEST-CSHARP\\ProductClientHub.Exception\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,10 +63,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+<<<<<<< Updated upstream
+=======
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
             },
+>>>>>>> Stashed changes
             "Dapper": {
               "target": "Package",
               "version": "[2.1.66, )"

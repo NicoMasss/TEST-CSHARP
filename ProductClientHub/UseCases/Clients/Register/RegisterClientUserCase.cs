@@ -2,7 +2,6 @@
 using ProductClientHub.Communication.Requests;
 using ProductClientHub.Communication.Responses;
 using ProductClientHub.Exceptions.ExceptionsBase;
-using ProductClientHub.API.UseCases.Clients;
 
 namespace ProductClientHub.API.UseCases.Clients.Register
 {
@@ -10,7 +9,7 @@ namespace ProductClientHub.API.UseCases.Clients.Register
     {
         public ResponseClientJson Execute(RequestClientJson request)
         {
-            var validator = new ClientSuperValidator("register");
+            var validator = new RegisterClientValidator();
 
             var result = validator.Validate(request);
              
@@ -21,9 +20,16 @@ namespace ProductClientHub.API.UseCases.Clients.Register
                  throw new ErrorOnValidationException(errors);
             }
 
+<<<<<<< Updated upstream
+
             var repository = new ClientRepository();
 
             var success = repository.Add(request);
+=======
+            var repository = new ClientRepository();
+
+            var addSuccess = repository.Add(request);
+>>>>>>> Stashed changes
 
             return new ResponseClientJson();
         }
