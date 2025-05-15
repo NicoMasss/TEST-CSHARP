@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ProductClientHub.API.UseCases.Clients.Register;
+using ProductClientHub.API.Infraestructure;
 using ProductClientHub.API.UseCases.Tasks.Register;
 using ProductClientHub.Communication.Requests;
 using ProductClientHub.Communication.Responses;
@@ -20,20 +20,28 @@ namespace ProductClientHub.API.Controllers
 
             var response = useCase.Execute(request);
 
-            return Created(string.Empty, new TaskResponse());
+            return Created(string.Empty, response);
         }
 
         [HttpGet]
         [Route("{taskId}")]
         public IActionResult GetById([FromRoute] Guid taskId)
         {
-            return Ok();
+            var repository = new TaskRepository();
+
+            var task = repository.GetById(taskId);
+
+            return Ok(task);
         }
 
         [HttpGet]
         public IActionResult GetTaskByUser([FromQuery] Guid AssignedTo) 
         {
-            return Ok();
+            var repository = new TaskRepository();
+
+            var task = repository.GetByAssignedTo(AssignedTo);
+
+            return Ok(task);
         }
 
         [HttpPut]
@@ -47,7 +55,11 @@ namespace ProductClientHub.API.Controllers
         [Route("{taskId}")]
         public IActionResult DeleteTask(Guid taskId) 
         {
-            return NoContent();
+            var repository = new TaskRepository();
+
+            var success = repository.Delete(taskId);
+
+            return Ok(success);
         }
     }
 }

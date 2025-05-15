@@ -1,6 +1,7 @@
 ﻿using ProductClientHub.Communication.Requests;
 using ProductClientHub.Communication.Responses;
 using ProductClientHub.Exceptions.ExceptionsBase;
+using ProductClientHub.API.Infraestructure;
 
 namespace ProductClientHub.API.UseCases.Tasks.Register
 {
@@ -19,6 +20,11 @@ namespace ProductClientHub.API.UseCases.Tasks.Register
 
                 throw new ErrorOnValidationException(errors);
             }
+
+            var repository = new TaskRepository();
+
+            var success = repository.Add(request);
+            
             return new TaskResponse();
 
         }

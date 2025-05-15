@@ -15,7 +15,7 @@ namespace ProductClientHub.API.Infraestructure
 
             string query = @"INSERT INTO public.users(
 	                            name, email, password_hash)
-	                            VALUES (@Name, @Email, @passwordHash);";
+	                                VALUES (@Name, @Email, @passwordHash);"; 
 
             var result = conn.Connection.Execute(sql: query, param: new
             {

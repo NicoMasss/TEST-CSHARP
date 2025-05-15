@@ -8,7 +8,7 @@ namespace ProductClientHub.API.Infraestructure
 
         public DBConnection() 
         {
-            Connection = new NpgsqlConnection("Server=localhost;Port=5432;Database=Project_Engenharia;User id=postgres;Password=123");
+            Connection = new NpgsqlConnection("Server=localhost;Port=5432;Database=postgres;User id=postgres;Password=123");
             Connection.Open(); 
         }
 
