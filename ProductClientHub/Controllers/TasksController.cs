@@ -44,11 +44,13 @@ namespace ProductClientHub.API.Controllers
             return Ok(task);
         }
 
-        [HttpPut]
-        [Route("{taskId}")]
-        public IActionResult UptadeTask([FromRoute] Guid taskId, [FromBody] TaskRequest request) 
+        [HttpPut("UpdateTask")]
+        public IActionResult UptadeTask([FromBody] TaskRequestUpdate request) 
         {
-            return NoContent();
+            var repository = new TaskRepository();
+
+            var task = repository.Update(request);
+            return Ok(task);
         }
 
         [HttpDelete]
