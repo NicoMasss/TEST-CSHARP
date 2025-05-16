@@ -7,7 +7,7 @@ namespace ProductClientHub.API.UseCases.Clients.Register
 {
     public class RegisterClientUserCase
     {
-        public ResponseClientJson Execute(RequestClientJson request)
+        public bool Execute(RequestClientJson request)
         {
             var validator = new RegisterClientValidator();
 
@@ -25,7 +25,7 @@ namespace ProductClientHub.API.UseCases.Clients.Register
 
             var success = repository.Add(request);
 
-            return new ResponseClientJson();
+            return success == true;
         }
     }
 }

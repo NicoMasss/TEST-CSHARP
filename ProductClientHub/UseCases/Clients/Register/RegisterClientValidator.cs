@@ -9,6 +9,7 @@ namespace ProductClientHub.API.UseCases.Clients.Register
         {
             RuleFor(client => client.Name).NotEmpty().WithMessage("O nome não pode ser vazio");
             RuleFor(client => client.Email).EmailAddress().WithMessage("O e-mail não é válido");
+            RuleFor(client => client.Password).NotEmpty().WithMessage("A senha não pode ser vazia");
         }
     }
 }

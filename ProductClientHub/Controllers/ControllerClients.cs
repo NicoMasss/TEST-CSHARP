@@ -37,7 +37,7 @@ namespace ProductClientHub.API.Controllers
             return Ok(users);
         }
 
-        [HttpGet]
+        [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
             var repository = new ClientRepository();

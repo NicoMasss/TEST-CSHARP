@@ -7,7 +7,7 @@ namespace ProductClientHub.API.UseCases.Tasks.Register
 {
     public class RegisterTasksUserCase
     {
-        public TaskResponse Execute(TaskRequest request)
+        public bool Execute(TaskRequest request)
         {
 
             var validator = new RegisterTasksValidator();
@@ -25,7 +25,7 @@ namespace ProductClientHub.API.UseCases.Tasks.Register
 
             var success = repository.Add(request);
             
-            return new TaskResponse();
+            return success == true;
 
         }
     }

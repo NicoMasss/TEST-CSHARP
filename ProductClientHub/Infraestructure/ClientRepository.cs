@@ -31,7 +31,7 @@ namespace ProductClientHub.API.Infraestructure
         {
             using var conn = new DBConnection();
 
-            string query = @"Select * FROM users WHERE is_deleted = false;";
+            string query = @"SELECT name, email FROM users WHERE is_deleted = false;";
 
             var users = conn.Connection.Query<RequestClientJson>(sql: query);
 
@@ -55,7 +55,8 @@ namespace ProductClientHub.API.Infraestructure
         {
             using var conn = new DBConnection();
 
-            string query = "DELETE FROM tasks WHERE id = @Id;";
+            string query = "UPDATE users SET is_deleted = true WHERE id = @Id;";
+
             var result = conn.Connection.Execute(query, new { Id = id });
 
             return result == 1;
