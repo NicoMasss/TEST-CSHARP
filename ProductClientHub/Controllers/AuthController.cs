@@ -43,8 +43,8 @@ namespace ProductClientHub.API.Controllers
 
         [HttpPost("logout")]
         public IActionResult Logout() 
-        { 
-            return BadRequest(); 
+        {
+            return Ok(new { message = "Logout realizado com sucesso." });
         }
     }
 }
