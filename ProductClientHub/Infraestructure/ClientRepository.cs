@@ -91,5 +91,26 @@ namespace ProductClientHub.API.Infraestructure
 
             return result == 1;
         }
+ 
+        public (RequestClientJson? user, string? passwordHash, Guid Id) GetByEmail(string email)
+        {
+            using var conn = new DBConnection();
+
+            var passwordQuery = @"SELECT password_hash FROM users 
+                                    WHERE email = @Email AND is_deleted = false;";
+
+            var storedPasswordHash = conn.Connection.QueryFirstOrDefault<string>(passwordQuery, new { Email = email });
+
+            var IdQuery = @"SELECT id FROM users 
+                                    WHERE email = @Email AND is_deleted = false;";
+
+            Guid storedId = conn.Connection.QueryFirstOrDefault<Guid>(IdQuery, new { Email = email });
+
+            string query = "SELECT * FROM users WHERE email = @Email AND is_deleted = false";
+
+            var user = conn.Connection.QueryFirstOrDefault<RequestClientJson>(query, new { Email = email });
+
+            return (user, storedPasswordHash, storedId);
+        }
     }
 }

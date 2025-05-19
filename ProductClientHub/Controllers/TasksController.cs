@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductClientHub.API.Infraestructure;
 using ProductClientHub.API.UseCases.Tasks.Register;
@@ -11,6 +12,7 @@ namespace ProductClientHub.API.Controllers
     [ApiController]
     public class TasksController : ControllerBase
     {
+        [Authorize]
         [HttpPost("createTask")]
         [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]

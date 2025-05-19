@@ -7,7 +7,7 @@ namespace ProductClientHub.API.UseCases.Auths.Register
     {
         public RegisterAuthsValidator()
         {
-            RuleFor(auth => auth.User).NotEmpty().WithMessage("O usuário não pode ser vazio");
+            RuleFor(auth => auth.Email).EmailAddress().WithMessage("O usuário não pode ser vazio");
             RuleFor(auth => auth.Password).NotEmpty().WithMessage("A senha não é válida");      
         }
     }

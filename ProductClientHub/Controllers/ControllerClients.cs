@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.DataProtection.Repositories;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using ProductClientHub.API.Infraestructure;
 using ProductClientHub.API.UseCases.Clients.Register;
@@ -12,6 +13,7 @@ namespace ProductClientHub.API.Controllers
 
     public class ControllerClients : ControllerBase
     {
+        [Authorize]
         [HttpPost("createClient")]
         [ProducesResponseType(typeof(ResponseClientJson), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
