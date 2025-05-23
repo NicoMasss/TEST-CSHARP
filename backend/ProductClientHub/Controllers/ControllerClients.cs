@@ -14,7 +14,7 @@ namespace ProductClientHub.API.Controllers
     public class ControllerClients : ControllerBase
     {
         [Authorize]
-        [HttpPost("createClient")]
+        [HttpPost]
         [ProducesResponseType(typeof(ResponseClientJson), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
         public IActionResult Register([FromBody] RequestClientJson request)
@@ -39,7 +39,7 @@ namespace ProductClientHub.API.Controllers
             return Ok(users);
         }
 
-        [HttpGet("GetAll")]
+        [HttpGet]
         public IActionResult GetAll()
         {
             var repository = new ClientRepository();

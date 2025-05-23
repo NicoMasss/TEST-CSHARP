@@ -13,7 +13,7 @@ namespace ProductClientHub.API.Controllers
     public class TasksController : ControllerBase
     {
         [Authorize]
-        [HttpPost("createTask")]
+        [HttpPost]
         [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
         public IActionResult CreateTask([FromBody] TaskRequest request)
@@ -46,7 +46,7 @@ namespace ProductClientHub.API.Controllers
             return Ok(task);
         }
 
-        [HttpPut("UpdateTask")]
+        [HttpPut]
         public IActionResult UptadeTask([FromBody] TaskRequestUpdate request) 
         {
             var repository = new TaskRepository();

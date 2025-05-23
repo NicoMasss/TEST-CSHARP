@@ -27,13 +27,13 @@ namespace ProductClientHub.API.Infraestructure
             return result == 1;
         }
 
-        public List<RequestClientJson> Get() 
+        public List<ResponseClientJson> Get() 
         {
             using var conn = new DBConnection();
 
-            string query = @"SELECT name, email FROM users WHERE is_deleted = false;";
+            string query = @"SELECT name, email, id FROM users WHERE is_deleted = false;";
 
-            var users = conn.Connection.Query<RequestClientJson>(sql: query);
+            var users = conn.Connection.Query<ResponseClientJson>(sql: query);
 
             return users.ToList();
         }
