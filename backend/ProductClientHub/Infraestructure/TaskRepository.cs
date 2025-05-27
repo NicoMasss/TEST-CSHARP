@@ -25,7 +25,7 @@ namespace ProductClientHub.API.Infraestructure
             return result == 1;
         }
 
-        public TaskRequest GetById(Guid id)
+        public TaskResponse GetById(Guid id)
         {
             using var conn = new DBConnection();
 
@@ -33,7 +33,7 @@ namespace ProductClientHub.API.Infraestructure
                             FROM tasks 
                                 WHERE id = @Id AND is_deleted = false;";
 
-            var result = conn.Connection.QueryFirstOrDefault<TaskRequest>(
+            var result = conn.Connection.QueryFirstOrDefault<TaskResponse>(
                 sql: query,
                 param: new { Id = id }
             );
@@ -41,15 +41,15 @@ namespace ProductClientHub.API.Infraestructure
             return result;
         }
 
-        public TaskRequest GetByAssignedTo(Guid id)
+        public TaskResponse GetByAssignedTo(Guid id)
         {
             using var conn = new DBConnection();
 
-            var query = @"SELECT title, description, status, assigned_to AS AssignedTo
+            var query = @"SELECT id, title, description, status
                             FROM tasks 
                                 WHERE assigned_to = @Id AND is_deleted = false;";
 
-            var client = conn.Connection.QueryFirstOrDefault<TaskRequest>(query, new { Id = id });
+            var client = conn.Connection.QueryFirstOrDefault<TaskResponse>(query, new { Id = id });
 
             return client;
         }

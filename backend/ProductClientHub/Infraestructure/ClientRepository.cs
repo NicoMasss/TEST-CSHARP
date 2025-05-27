@@ -11,17 +11,15 @@ namespace ProductClientHub.API.Infraestructure
         {
             using var conn = new DBConnection();
 
-            var passwordHash = BCrypt.Net.BCrypt.HashPassword(client.Password);
-
-            string query = @"INSERT INTO public.users(
-	                            name, email, password_hash)
-	                                VALUES (@Name, @Email, @passwordHash);"; 
+            string query = @"INSERT INTO public.clients(
+	                            name, email, description)
+	                                VALUES (@Name, @Email, @Description);"; 
 
             var result = conn.Connection.Execute(sql: query, param: new
             {
                 Name = client.Name,
                 Email = client.Email,
-                PasswordHash = passwordHash
+                Description = client.Description
             });
 
             return result == 1;
@@ -31,11 +29,11 @@ namespace ProductClientHub.API.Infraestructure
         {
             using var conn = new DBConnection();
 
-            string query = @"SELECT name, email, id FROM users WHERE is_deleted = false;";
+            string query = @"SELECT name, email, id FROM clients WHERE is_deleted = false;";
 
-            var users = conn.Connection.Query<ResponseClientJson>(sql: query);
+            var clients = conn.Connection.Query<ResponseClientJson>(sql: query);
 
-            return users.ToList();
+            return clients.ToList();
         }
 
         public ResponseClientJson GetById(Guid id)
@@ -43,7 +41,7 @@ namespace ProductClientHub.API.Infraestructure
             using var conn = new DBConnection();
 
             string query = @"SELECT id, name, email 
-                                FROM users 
+                                FROM clients 
                                     WHERE id = @Id AND is_deleted = false;";
 
             var client = conn.Connection.QueryFirstOrDefault<ResponseClientJson>(query, new { Id = id });
@@ -55,62 +53,52 @@ namespace ProductClientHub.API.Infraestructure
         {
             using var conn = new DBConnection();
 
-            string query = "UPDATE users SET is_deleted = true WHERE id = @Id;";
+            string query = "UPDATE clients SET is_deleted = true WHERE id = @Id;";
 
             var result = conn.Connection.Execute(query, new { Id = id });
 
             return result == 1;
         }
 
-        public bool Update(RequestClientJsonUpdate client) 
+        public bool Update(RequestClientJsonUpdate client)
         {
             using var conn = new DBConnection();
 
-            var passwordQuery = @"SELECT password_hash FROM users 
-                                    WHERE email = @Email AND is_deleted = false;";
+            var fieldsToUpdate = new List<string>();
+            var parameters = new DynamicParameters();
 
-            var storedPasswordHash = conn.Connection.QueryFirstOrDefault<string>(passwordQuery, new { Email = client.Email });
-
-            if (storedPasswordHash is null) return false;
-
-            bool passwordMatches = BCrypt.Net.BCrypt.Verify(client.Password, storedPasswordHash);
-
-            if (!passwordMatches) return false; //tem que retornar senha incorreta
-
-            var newPasswordHash = BCrypt.Net.BCrypt.HashPassword(client.NewPassword);
-
-            var updateQuery = @"UPDATE users 
-                                            SET password_hash = @NewPasswordHash
-                                                    WHERE email = @Email AND is_deleted = false;";
-
-            var result = conn.Connection.Execute(updateQuery, new
+            if (!string.IsNullOrEmpty(client.NewName))
             {
-                NewPasswordHash = newPasswordHash,
-                Email = client.Email
-            });
+                fieldsToUpdate.Add("name = @Name");
+                parameters.Add("Name", client.NewName);
+            }
 
-            return result == 1;
+            if (!string.IsNullOrEmpty(client.NewEmail))
+            {
+                fieldsToUpdate.Add("email = @Email");
+                parameters.Add("Email", client.NewEmail);
+            }
+
+            if (!string.IsNullOrEmpty(client.NewDescription))
+            {
+                fieldsToUpdate.Add("description = @Description");
+                parameters.Add("Description", client.NewDescription);
+            }
+
+            if (!fieldsToUpdate.Any())
+                return false;
+
+            parameters.Add("Id", client.Id);
+
+            var query = $@"
+        UPDATE clients
+        SET {string.Join(", ", fieldsToUpdate)}
+        WHERE id = @Id AND is_deleted = false";
+
+            var success = conn.Connection.Execute(query, parameters);
+
+            return success == 1;
         }
- 
-        public (RequestClientJson? user, string? passwordHash, Guid Id) GetByEmail(string email)
-        {
-            using var conn = new DBConnection();
 
-            var passwordQuery = @"SELECT password_hash FROM users 
-                                    WHERE email = @Email AND is_deleted = false;";
-
-            var storedPasswordHash = conn.Connection.QueryFirstOrDefault<string>(passwordQuery, new { Email = email });
-
-            var IdQuery = @"SELECT id FROM users 
-                                    WHERE email = @Email AND is_deleted = false;";
-
-            Guid storedId = conn.Connection.QueryFirstOrDefault<Guid>(IdQuery, new { Email = email });
-
-            string query = "SELECT * FROM users WHERE email = @Email AND is_deleted = false";
-
-            var user = conn.Connection.QueryFirstOrDefault<RequestClientJson>(query, new { Email = email });
-
-            return (user, storedPasswordHash, storedId);
-        }
     }
 }

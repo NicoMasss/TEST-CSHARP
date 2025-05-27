@@ -6,6 +6,7 @@ using ProductClientHub.Communication.Responses;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using ProductClientHub.API.Helpers;
+using ProductClientHub.API.UseCases.Clients.Register;
 
 
 namespace ProductClientHub.API.Controllers
@@ -18,9 +19,9 @@ namespace ProductClientHub.API.Controllers
         [HttpPost("login")]
         [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
-        public IActionResult Login([FromBody] AuthRequest request)
+        public IActionResult Login([FromBody] AuthRequestLogin request)
         {
-            var repository = new ClientRepository();
+            var repository = new UserAdminRepository();
 
             var client = repository.GetByEmail(request.Email);
 
@@ -30,6 +31,7 @@ namespace ProductClientHub.API.Controllers
 
             var user = client.user;
 
+            var newPasswordHash = BCrypt.Net.BCrypt.HashPassword(client.passwordHash);
 
             if (passwordHash == null || !BCrypt.Net.BCrypt.Verify(request.Password, passwordHash))
             {
@@ -39,6 +41,17 @@ namespace ProductClientHub.API.Controllers
             var token = JwtTokenGenerator.Generate(Id, user.Email);
 
             return Ok(new AuthResponse { Token = token });
+        }
+
+        [AllowAnonymous]
+        [HttpPost("RegisterAdm")] 
+        public IActionResult Register([FromBody] AuthRequestRegister request) 
+        {
+            var repository = new UserAdminRepository();
+
+            var success = repository.Add(request);
+
+            return Created(string.Empty, success);
         }
 
         [HttpPost("logout")]

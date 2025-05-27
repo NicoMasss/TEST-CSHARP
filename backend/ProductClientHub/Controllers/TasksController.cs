@@ -26,25 +26,25 @@ namespace ProductClientHub.API.Controllers
         }
 
         [HttpGet]
-        [Route("{taskId}")]
+        [Route("by-id/{taskId}")]
         public IActionResult GetById([FromRoute] Guid taskId)
         {
             var repository = new TaskRepository();
-
             var task = repository.GetById(taskId);
-
             return Ok(task);
         }
 
         [HttpGet]
-        public IActionResult GetTaskByUser([FromQuery] Guid AssignedTo) 
+        [Route("by-user/{assignedTo}")]
+        public IActionResult GetTaskByUser([FromRoute] Guid assignedTo)
         {
             var repository = new TaskRepository();
 
-            var task = repository.GetByAssignedTo(AssignedTo);
+            var task = repository.GetByAssignedTo(assignedTo);
 
             return Ok(task);
         }
+
 
         [HttpPut]
         public IActionResult UptadeTask([FromBody] TaskRequestUpdate request) 

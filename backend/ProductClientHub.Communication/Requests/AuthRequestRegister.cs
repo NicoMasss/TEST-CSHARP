@@ -1,7 +1,8 @@
 ﻿namespace ProductClientHub.Communication.Requests
 {
-    public class AuthRequest
+    public class AuthRequestRegister
     {
+        public string Name { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
     }

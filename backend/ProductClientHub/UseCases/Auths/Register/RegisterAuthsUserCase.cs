@@ -6,7 +6,7 @@ namespace ProductClientHub.API.UseCases.Auths.Register
 {
     public class RegisterAuthsUserCase
     {
-        public AuthResponse Execute(AuthRequest request)
+        public AuthResponse Execute(AuthRequestRegister request)
         {
 
             var validator = new RegisterAuthsValidator();
