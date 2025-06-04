@@ -3,7 +3,7 @@ using ProductClientHub.Communication.Requests;
 
 namespace ProductClientHub.API.UseCases.Auths.Register
 {
-    public class RegisterAuthsValidator : AbstractValidator<AuthRequest>
+    public class RegisterAuthsValidator : AbstractValidator<AuthRequestRegister>
     {
         public RegisterAuthsValidator()
         {

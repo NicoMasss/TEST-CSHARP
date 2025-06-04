@@ -2,8 +2,9 @@
 {
     public class RequestClientJsonUpdate
     {
-        public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-        public string NewPassword { get; set; } = string.Empty;
+        public Guid Id { get; set; }
+        public string NewName { get; set; } = string.Empty;
+        public string NewEmail { get; set; } = string.Empty;
+        public string NewDescription { get; set; } = string.Empty;
     }
 }
