@@ -10,6 +10,9 @@
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.69.0.3746" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.17" />
+	<PackageReference Include="Google.Apis.Auth" Version="1.69.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.*" />
     <PackageReference Include="Npgsql" Version="9.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
@@ -19,5 +22,12 @@
     <ProjectReference Include="..\ProductClientHub.Communication\ProductClientHub.Communication.csproj" />
 	<ProjectReference Include="..\ProductClientHub.Exception\ProductClientHub.Exceptions.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.Development.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
 
 </Project>

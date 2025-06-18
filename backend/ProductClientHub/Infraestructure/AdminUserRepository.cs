@@ -1,5 +1,7 @@
 ﻿using Dapper;
+using Npgsql;
 using ProductClientHub.Communication.Requests;
+using ProductClientHub.Communication.Responses;
 
 namespace ProductClientHub.API.Infraestructure
 {
@@ -25,6 +27,17 @@ namespace ProductClientHub.API.Infraestructure
             return result == 1;
         }
 
+        public List<UserResponse> Get() 
+        {
+            using var conn = new DBConnection();
+
+            string query = @"SELECT name, email, id FROM admin_users WHERE is_deleted = false;";
+
+            var user = conn.Connection.Query<UserResponse>(sql: query);
+
+            return user.ToList();
+        }
+
         public (AuthRequestLogin? user, string? passwordHash, Guid Id) GetByEmail(string email)
         {
             using var conn = new DBConnection();
@@ -45,5 +58,24 @@ namespace ProductClientHub.API.Infraestructure
 
             return (user, storedPasswordHash, storedId);
         }
+
+        public void SaveGoogleAccessToken(string email, string accessToken)
+        {
+            using var conn = new DBConnection();
+
+            var sql = "UPDATE admin_users SET google_access_token = @Token WHERE email = @Email";
+
+            conn.Connection.Execute(sql, new { Token = accessToken, Email = email });
+        }
+
+        public string? GetGoogleAccessToken(string email)
+        {
+            using var conn = new DBConnection();
+
+            var sql = "SELECT google_access_token FROM admin_users WHERE email = @Email";
+
+            return conn.Connection.QueryFirstOrDefault<string>(sql, new { Email = email });
+        }
+
     }
 }

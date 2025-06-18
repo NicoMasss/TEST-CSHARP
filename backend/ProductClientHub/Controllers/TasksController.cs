@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProductClientHub.API.Infraestructure;
@@ -12,7 +13,7 @@ namespace ProductClientHub.API.Controllers
     [ApiController]
     public class TasksController : ControllerBase
     {
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [ProducesResponseType(typeof(AuthResponse), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
@@ -24,7 +25,17 @@ namespace ProductClientHub.API.Controllers
 
             return Created(string.Empty, response);
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var repository = new TaskRepository();
 
+            var task = repository.Get();
+
+            return Ok(task);
+        }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Route("by-id/{taskId}")]
         public IActionResult GetById([FromRoute] Guid taskId)
@@ -33,7 +44,7 @@ namespace ProductClientHub.API.Controllers
             var task = repository.GetById(taskId);
             return Ok(task);
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Route("by-user/{assignedTo}")]
         public IActionResult GetTaskByUser([FromRoute] Guid assignedTo)
@@ -44,20 +55,31 @@ namespace ProductClientHub.API.Controllers
 
             return Ok(task);
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpGet]
+        [Route("by-client/{assignedTo}")]
+        public IActionResult GetTaskByClient([FromRoute] Guid assignedTo)
+        {
+            var repository = new TaskRepository();
 
+            var task = repository.GetByAssignedToClient(assignedTo);
 
+            return Ok(task);
+        }
+
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut]
-        public IActionResult UptadeTask([FromBody] TaskRequestUpdate request) 
+        public IActionResult UptadeTask([FromBody] TaskRequestUpdate request)
         {
             var repository = new TaskRepository();
 
             var task = repository.Update(request);
             return Ok(task);
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete]
         [Route("{taskId}")]
-        public IActionResult DeleteTask(Guid taskId) 
+        public IActionResult DeleteTask(Guid taskId)
         {
             var repository = new TaskRepository();
 
@@ -65,5 +87,16 @@ namespace ProductClientHub.API.Controllers
 
             return Ok(success);
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [HttpGet("by-status-duedate")]
+        public IActionResult GetTasksByStatusAndDueDate([FromQuery] string status, [FromQuery] DateTime? dueDate)
+        {
+            var repository = new TaskRepository();
+
+            var success = repository.GetTasksByStatusAndDueDate(status, dueDate);
+
+            return Ok(success);
+        }
+
     }
 }
