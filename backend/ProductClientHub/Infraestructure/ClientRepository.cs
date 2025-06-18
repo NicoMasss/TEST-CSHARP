@@ -36,11 +36,11 @@ namespace ProductClientHub.API.Infraestructure
             return clients.ToList();
         }
 
-        public ResponseClientJson GetById(Guid id)
+        public ResponseClientJson GetById(Guid id) 
         {
             using var conn = new DBConnection();
 
-            string query = @"SELECT id, name, email 
+            string query = @"SELECT id, name, email, description 
                                 FROM clients 
                                     WHERE id = @Id AND is_deleted = false;";
 

@@ -11,6 +11,10 @@
   <div class="container mt-5">
     <h1 class="text-center mb-4">Painel de Gestão</h1>
 
+  <a href="https://localhost:7109/api/Auth/google/login" class="btn btn-danger">
+    Conectar ao Google Agenda
+    </a>
+
     <!-- Seção de Clientes -->
     <div class="mb-4">
       <h3>Clientes</h3>
@@ -18,7 +22,7 @@
 
       <div class="input-group mb-3">
         <input type="text" id="buscarClienteId" class="form-control" placeholder="Buscar cliente por ID">
-        <button class="btn btn-outline-light" onclick="buscarClientePorId()">Buscar</button>
+        <button class="btn btn-outline-light" onclick="getClientsById()">Buscar</button>
       </div>
 
       <div class="row" id="clientes"></div>
@@ -28,35 +32,82 @@
     <div class="mb-4">
       <h3>Tarefas</h3>
 
-      <div class="input-group mb-3">
-        <input type="text" id="buscarTaskId" class="form-control" placeholder="Buscar task por ID">
-        <button class="btn btn-outline-light" onclick="buscarTaskPorId()">Buscar</button>
+      <div class="mb-3">
+        <label for="taskSelect">Selecione uma task:</label>
+        
+        <select id="taskSelect" class="form-select">
+          <option value="">-- Selecione --</option>
+        </select>
+        <button class="btn btn-primary mt-2" onclick="buscarTaskSelecionada()">Buscar task</button>
       </div>
 
-      <div class="input-group mb-3">
-        <input type="text" id="buscarTarefasClienteId" class="form-control" placeholder="Buscar tarefas por ID do cliente">
-        <button class="btn btn-outline-light" onclick="buscarTarefasPorCliente()">Buscar</button>
+      <div class="mb-3">
+      <label for="statusBusca">Buscar Task por Cliente:</label>
+      <select id="assignedToClientBusca" class="form-select">
+         <option value="">-- Selecione --</option>
+      </select>
+      <button class="btn btn-primary mt-2" onclick="buscarTasksPorClienteId()">Buscar Tasks do Cliente</button>
       </div>
+
+      <div class="mb-3">
+      <label for="statusBusca">Buscar Task por Responsável:</label>
+      <select id="assignedToUserBusca" class="form-select mb-2">
+        <option value="">-- Selecione --</option>
+      </select>
+      <button class="btn btn-primary" onclick="buscarTasksPorUserId()">Buscar Tasks do Usuário</button>
+      </div>
+
+      <div class="mb-3">
+      <label for="statusBusca">Filtrar por Status e Data:</label>
+
+      <select id="statusBusca" class="form-select mb-2">
+        <option value="">-- Selecione o status --</option>
+        <option value="pendente">Pendente</option>
+        <option value="em_andamento">Em andamento</option>
+        <option value="concluido">Concluído</option>
+      </select>
+    
+      <input type="date" id="dueDateBusca" class="form-control mb-2" />
+    
+      <button class="btn btn-primary" onclick="buscarTasksPorStatusEDate()">Buscar Tasks</button>
+      </div>
+
+
+      <div id="taskInfo" class="row mb-3"></div>
+
 
       <div id="tarefas"></div>
     </div>
 
     <!-- Criar nova tarefa -->
-    <div class="mb-4">
+       <div class="mb-4">
       <h3>Criar Nova Tarefa</h3>
       <input type="text" id="titulo" class="form-control mb-2" placeholder="Título">
-      <input type="text" id="descricao" class="form-control mb-2" placeholder="Descrição">
-      <input type="text" id="assignedTo" class="form-control mb-2" placeholder="ID do Cliente Responsável">
-      <button onclick="criarTask()" class="btn btn-success">Criar Tarefa</button>
+      <input type="text" id="descricaoTask" class="form-control mb-2" placeholder="Descrição">
+      <select id="status" class="form-select mb-2">
+      <option disabled selected value="">Selecione o status</option>
+      <option value="pendente">Pendente</option>
+      <option value="em_andamento">Em andamento</option>
+      <option value="concluido">Concluído</option>
+      </select>
+      <select id="assignedToClientCriacao" class="form-select mb-2">
+        <option disabled selected value="">Selecione um cliente</option>
+      </select>
+      <select id="assignedTo" class="form-select mb-2" placeholder="Responsável">
+           <option disabled selected value="">Selecione um Responsável</option>
+      </select>
+      <input type="date" id="dueDate" class="form-control mb-2" placeholder="Prazo">
+      <button onclick="createTask()" class="btn btn-success">Criar Tarefa</button>
     </div>
+
 
     <!-- Criar novo cliente -->
     <div>
       <h3>Criar Novo Cliente</h3>
-      <input type="text" id="novoNome" class="form-control mb-2" placeholder="Nome">
-      <input type="text" id="novoEmail" class="form-control mb-2" placeholder="Email">
-      <input type="password" id="novaSenha" class="form-control mb-2" placeholder="Senha">
-      <button onclick="criarCliente()" class="btn btn-info">Criar Cliente</button>
+      <input type="text" id="nome" class="form-control mb-2" placeholder="Nome">
+      <input type="email" id="email" class="form-control mb-2" placeholder="Email">
+      <input type="text" id="descricaoCliente" class="form-control mb-2" placeholder="Descricao">
+      <button onclick="createClient()" class="btn btn-info">Criar Cliente</button>
     </div>
   </div>
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using ProductClientHub.API.Infraestructure;
@@ -13,7 +14,7 @@ namespace ProductClientHub.API.Controllers
 
     public class ControllerClients : ControllerBase
     {
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [ProducesResponseType(typeof(ResponseClientJson), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorManagerJson), StatusCodes.Status400BadRequest)]
@@ -25,7 +26,7 @@ namespace ProductClientHub.API.Controllers
 
                 return Created(string.Empty, response);
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPut]
         public IActionResult Update([FromBody] RequestClientJsonUpdate request)
         {
@@ -38,7 +39,7 @@ namespace ProductClientHub.API.Controllers
 
             return Ok(users);
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -48,7 +49,7 @@ namespace ProductClientHub.API.Controllers
 
             return Ok(users);
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet]
         [Route("{id}")]
         public IActionResult GetById([FromRoute] Guid id)
@@ -59,7 +60,7 @@ namespace ProductClientHub.API.Controllers
 
             return Ok(user);
         }
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
         {
