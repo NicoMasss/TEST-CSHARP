@@ -165,11 +165,9 @@ POST /api/Auth/google/calendar/create-event
 ##  Observações
 
 - Os tokens JWT expiram em 1 hora.
-- Os tokens de acesso do Google são salvos em memória (pode ser adaptado para banco de dados).
-- Frontend pode ser facilmente migrado para React, Angular ou outro framework futuramente.
 
 ---
 
 ## 🧑 Autor
 
-Desenvolvido por **Nicolas Massochin**, **Guilherme Menna** e **Artur Costa**.
+Desenvolvido por **Nicolas Massochin**
