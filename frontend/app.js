@@ -108,7 +108,11 @@ function deletarCliente(id) {
   const confirmar = confirm("Tem certeza que deseja deletar este cliente?");
   if (!confirmar) return;
 
-  axios.delete(`https://localhost:7109/api/Clientes/${id}`)
+  api.delete(`/Clientes/${id}`, {
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+})
   .then(() => {
     alert("Cliente deletado com sucesso.");
     carregarClientes(); // Recarrega a lista
@@ -128,7 +132,11 @@ function carregarClientes() {
     return;
   }
 
-  axios.get("https://localhost:7109/api/Clientes/")
+  api.get(`/Clientes`, {
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+})
   .then(response => {
     const lista = response.data;
     const container = document.getElementById("clientes");
@@ -176,25 +184,6 @@ function buscarTaskSelecionada() {
   });
 }
 
-function exibirTaskNaTela(task) {
-  const container = document.getElementById("taskInfo");
-  container.innerHTML = `
-    <div class="col-md-4">
-      <div class="card p-3 mb-3">
-        <h5>${task.title}</h5>
-        <p><strong>ID:</strong> ${task.id}</p>
-        <p><strong>Descrição:</strong> ${task.description}</p>
-        <p><strong>Status:</strong> ${task.status}</p>
-        <p><strong>Due date:</strong> ${task.dueDate ? task.dueDate : 'Não informado'}</p>
-        <p><strong>Assigned to:</strong> ${task.assignedTo ? task.assignedTo : 'Não informado'}</p>
-        <p><strong>Assigned to client:</strong> ${task.assignedToClient ? task.assignedToClient : 'Não informado'}</p>
-        <p><strong>Assigned to client:</strong> ${task.status ? task.status : 'Não informado'}</p>
-        <button class="btn btn-danger btn-sm" onclick="deletarTask('${task.id}')">Deletar</button>
-      </div>
-    </div>
-  `;
-}
-
 async function buscarTasksPorUsuarioId() {
   try {
     const id = document.getElementById("buscarTarefasUsuarioId").value;
@@ -232,7 +221,7 @@ async function buscarTasksPorUsuarioId() {
             </select>
             <input type="date" id="due_u${task.id}" class="form-control mb-1" value="${task.dueDate ? task.dueDate.split('T')[0] : ''}">
 
-            <button class="btn btn-warning" onclick="atualizarTaskPorUsuario(${task.id})">Atualizar Task</button>
+            <button class="btn btn-warning" onclick="atualizarTaskPorId(${task.id})">Atualizar Task</button>
           </div>
         </div>
       `;
@@ -346,7 +335,7 @@ function exibirTasksDoClienteNaTela(tasks) {
           <input type="text" class="form-control mb-1" id="assignedToClient-${task.id}" value="${task.assignedToClient ? task.assignedToClient : ''}">
 
           <div class="d-flex justify-content-between">
-            <button class="btn btn-success btn-sm" onclick="atualizarTask('${task.id}')">Salvar</button>
+            <button class="btn btn-success btn-sm" onclick="atualizarTaskPorId('${task.id}')">Salvar</button>
             <button class="btn btn-danger btn-sm" onclick="deletarTask('${task.id}')">Deletar</button>
           </div>
         </div>
@@ -493,6 +482,7 @@ async function getAllClients() {
 // Função para buscar cliente por ID (sem interface ainda)
 async function getClientsById() {
   try {
+    const token = localStorage.getItem("token");
     const id = document.getElementById("buscarClienteId").value;
     const response = await api.get(`/Clientes/${id}`, {
   headers: {
@@ -513,13 +503,16 @@ async function getClientsById() {
             <input type="text" id="editName" class="form-control mb-2" placeholder="Novo Nome" value="${client.name}">
             <input type="email" id="editEmail" class="form-control mb-2" placeholder="Novo Email" value="${client.email}">
             <input type="text" id="editDescription" class="form-control mb-2" placeholder="Nova Descrição" value="${client.description}">
-            
-            <button class="btn btn-warning mb-2" onclick="atualizarClientePorId(${client.id})">Atualizar Cliente</button>
-            <button class="btn btn-info mb-2" onclick="mostrarTasksCliente(${client.id})">Gerenciar Tasks</button>
+
+            <button id="btnAtualizarCliente" class="btn btn-warning mb-2">Atualizar Cliente</button>
           </div>
         </div>
       </div>
     `;
+
+    document.getElementById("btnAtualizarCliente").addEventListener("click", () => {
+  atualizarClientePorId(client.id);
+  });
   } catch (error) {
     console.error("Erro ao buscar cliente:", error);
     alert("Cliente não encontrado.");
@@ -528,6 +521,7 @@ async function getClientsById() {
 
 async function mostrarTasksCliente(idCliente) {
   try {
+    const token = localStorage.getItem("token");
     const response = await api.get(`/Tasks/by-user/${idCliente}`, {
   headers: {
     Authorization: `Bearer ${token}`
@@ -570,29 +564,30 @@ async function mostrarTasksCliente(idCliente) {
 
 async function atualizarClientePorId(id) {
   try {
-    const name = document.getElementById("editName").value;
-    const email = document.getElementById("editEmail").value;
-    const description = document.getElementById("editDescription").value;
+    const newName = document.getElementById("editName").value;
+    const newEmail = document.getElementById("editEmail").value;
+    const newDescription = document.getElementById("editDescription").value;
 
     const token = localStorage.getItem("token");
 
-    await api.put(`/Clientes/${id}`, {
-      name,
-      email,
-      description
+    await api.put(`/Clientes`, {
+      id,
+      newName,
+      newEmail,
+      newDescription
     }, {
-  headers: {
-    Authorization: `Bearer ${token}`
-  }
-});
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
 
     alert("Cliente atualizado com sucesso!");
-    getClientsById(); // Recarrega os dados atualizados
   } catch (error) {
     console.error("Erro ao atualizar cliente:", error);
     alert("Erro ao atualizar cliente.");
   }
 }
+
 
 
 function exibirClienteNaTela(cliente) {
@@ -611,18 +606,23 @@ function exibirClienteNaTela(cliente) {
 
 async function atualizarTaskPorId(idTask) {
   try {
-    const title = document.getElementById(`title_${idTask}`).value;
-    const description = document.getElementById(`desc_${idTask}`).value;
-    const status = document.getElementById(`status_${idTask}`).value;
-    const dueDate = document.getElementById(`due_${idTask}`).value;
+    const newTitle = document.getElementById(`title-${idTask}`).value;
+    const newDescription = document.getElementById(`desc-${idTask}`).value;
+    const newStatus = document.getElementById(`status-${idTask}`).value;
+    const newDueDate = document.getElementById(`dueDate-${idTask}`).value;
+    const newAssignedTo = document.getElementById(`assignedTo-${idTask}`).value;
+    const newAssignedToClient = document.getElementById(`assignedToClient-${idTask}`).value;
 
     const token = localStorage.getItem("token");
 
-    await api.put(`/Tasks/${idTask}`, {
-      title,
-      description,
-      status,
-      dueDate
+    await api.put(`/Tasks`, {
+      idTask,
+      newTitle,
+      newDescription,
+      newStatus,
+      newDueDate,
+      newAssignedTo,
+      newAssignedToClient
     }, {
   headers: {
     Authorization: `Bearer ${token}`
@@ -655,7 +655,7 @@ async function getTaskById() {
   } 
 }
 
-async function getTaskByUser() { //utilizar
+async function getTaskByUser() {
   try {
     const id = document.getElementById("buscarTarefasClienteId").value;
     const response = await api.get(`/Tasks/by-user/${id}`, {
@@ -672,7 +672,7 @@ async function getTaskByUser() { //utilizar
 async function createTask() {
   const titulo = document.getElementById("titulo").value;
   const descricao = document.getElementById("descricaoTask").value;
-  const status = document.getElementById("status").value; // Alteração: pega do select
+  const status = document.getElementById("status").value; 
   const assignedTo = document.getElementById("assignedTo").value;
   const assignedToClient = document.getElementById("assignedToClientCriacao").value;
   const dueDate = document.getElementById("dueDate").value;
@@ -769,3 +769,4 @@ window.carregarClientes = carregarClientes;
 window.deletarCliente = deletarCliente;
 window.createTask = createTask;
 window.buscarTasksPorClienteId = buscarTasksPorClienteId;
+window.atualizarClientePorId = atualizarClientePorId;
