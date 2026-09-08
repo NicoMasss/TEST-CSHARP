@@ -34,23 +34,6 @@ Sistema completo de gerenciamento de **clientes** e **tarefas**, com autenticaç
 
 ---
 
-## 🗃️ Estrutura do Projeto
-
-```
-ProductClientHub
-│
-├── ProductClientHub.API                # Projeto principal da API
-├── ProductClientHub.Communication     # DTOs de Request/Response
-├── ProductClientHub.Exceptions        # Gerenciador de erros personalizados
-├── database.sql                       # Script de criação das tabelas PostgreSQL
-└── frontend/
-    ├── index.html                     # Tela de login
-    ├── homepage.html                  # Tela principal com dashboard
-    ├── app.js                         # Arquivo JavaScript com funções principais
-```
-
----
-
 ## 🚀 Como rodar na sua máquina
 
 ### 🧱 Pré-requisitos
